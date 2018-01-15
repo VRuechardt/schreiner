@@ -1,0 +1,16 @@
+
+<div class="books md-padding">
+
+    <div ng-repeat="book in books" class="book">
+
+        <h3>{{book.title}}</h3>
+        <p>{{book.description}}</p>
+        <b>ISBN:</b> <i>book.isbn</i>
+
+    </div>
+
+    <div ng-if="books.length === 0">
+        Keine Bücher vorhanden
+    </div>
+
+</div>
