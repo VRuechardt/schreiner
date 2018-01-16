@@ -35,7 +35,7 @@ const Book = ['$http', ($http) => {
 
         },
 
-        delete: (id) => {
+        delete: id => {
 
             return $http.delete(`/api/book/` + id)
 
